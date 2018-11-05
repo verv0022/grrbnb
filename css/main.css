@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Pattaya');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: Pattaya, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+header {
+    background-image: url(/img/yuki-dog-547815-unsplash.jpg);
+    background-position: center center;
+    background-size: cover;
+
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #aaa;
+}
+
+
+
+input#min.price::after {
+    content: "$"attr(data-price);
+    display: block;
+    margin-top: -1.5rem;
+
+}
+
+input.price#max::after {
+    content: "$"attr(data-price);
+    display: block;
+    margin-top: -1.5rem;
+}
+
+
+@media (max-width: 599px) {
+
+
+
+    form {
+        display: :flex;
+        flex-direction: column;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        width: 20%;
+        display: block;
+    }
+
+    h1 {
+        font-size: 3rem;
+        text-align: right;
+        color: orangered;
+        text-shadow: 2px 2px 1px white;
+        padding-right: 10px;
+    }
+
+
+    div:nth-child(n) {
+        padding: 1rem;
+    }
+
+    div:nth-child(n+1) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        background-image: linear-gradient(orangered 0%, orange 100%);
+        width: 70px;
+        height: auto;
+        font-size: 20px;
+        color: white;
+    }
+
+    input {
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width:999px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        width: 20%;
+        display: block;
+    }
+
+    h1 {
+        font-size: 3rem;
+        text-align: right;
+        color: orangered;
+        text-shadow: 2px 2px 1px white;
+        padding-right: 10px;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+    }
+
+    div:nth-child(n) {
+        padding: 4px;
+    }
+
+    div:first-child {
+        grid-column: span 2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    div:nth-child(n+2) {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    div:last-child {
+        justify-content: flex-end;
+    }
+
+    input {
+        font-size: 20px;
+    }
+
+    button {
+        width: 80px;
+        height: auto;
+        font-size: 20px;
+        margin-left: auto;
+        background-image: linear-gradient(orangered 0%, orange 100%);
+        color: white;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    img {
+        width: 20%;
+        display: block;
+    }
+
+    h1 {
+        font-size: 2rem;
+        color: orangered;
+        text-shadow: 2px 2px 1px white;
+        padding-left: 10px;
+    }
+
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+    }
+
+    div:nth-child(n) {
+        padding: 4px;
+    }
+
+    div:first-child {
+        grid-column: span 2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    div:nth-child(n+2) {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    div:last-child {
+        justify-content: flex-end;
+    }
+
+    input {
+        font-size: 20px;
+    }
+
+    button {
+        width: 80px;
+        height: auto;
+        font-size: 20px;
+        margin-left: auto;
+        background-image: linear-gradient(orangered 0%, orange 100%);
+        color: white;
+
+    }
+}
+
+/* Photo by Yuki Dog on Unsplash */
